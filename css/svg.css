@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Open+Sans&display=swap');
+
+html.sr .load-hidden {
+    visibility: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+h2, h1, span {
+    color: #ff837f;
+    font-family: 'Akronim', cursive;
+    font-size: 8vh;
+}
+
+.header-box h1 {
+    color: aliceblue !important;
+    padding-left: 10px;
+}
+
+h3 {
+    font-size: 5vh;
+    color: #ff837f;
+    font-family: 'Akronim', cursive;
+}
+
+h2:not(.bullet-points h2){
+    margin-bottom: 10vh;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: aliceblue;
+}
+
+body {
+    background-color: #040220;
+}
+
+#section1 {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient();
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.header-box{
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+}
+
+#section1 svg {
+    width: 100%;
+    height: 100vh;
+    z-index: -30;
+}
+
+#section2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 80%;
+    text-align: center;
+}
+
+.textbox h2 {
+    align-self: center;
+    width: 100%;
+    border: 5px solid #ff837f;
+    border-radius: 5px;
+}
+
+#section3 {
+    width: 100%;
+    height: 70vh;
+    clip-path: polygon(0 0, 100% 38%, 100% 100%, 0% 100%);
+    margin: 5vh auto;
+}
+
+#section3 .sunset {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.data-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.data-item svg {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+}
+
+#section4 h2 {
+    text-align: center;
+}
+
+#section5 {
+    list-style: none;
+}
+
+.bullets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.bullet-points {
+    width:80%;
+    border: 1px solid #ff837f;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5vh auto;
+    position: relative;
+    cursor: pointer;
+    transition: transform .2s ease-out;
+}
+
+section:not(#section1, #section6){
+    margin: 10vh auto;
+}
+
+#section6{
+    background-color: #ff837f;
+    display: flex;
+    height: 50vh;
+    justify-content: center;
+    align-items: center;
+}
+
+#section6 h1{
+    color: aliceblue;
+    text-align: center;
+}
+
+.bullet-points img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: #ff837f;
+    position: absolute;
+    top: -20px;
+    transition: background-color .2s ease-out;
+}
+
+h2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+h2 span {
+    width: 50%;
+    text-align: center;
+}
+
+.span1 {
+    align-self: flex-start;
+}
+
+.span2 {
+    align-self: center;
+}
+
+.span3 {
+    align-self: flex-end;
+}
+
+#clouds{
+    animation: cloud linear 18s infinite;
+    opacity: 0.7;
+}
+
+
+@keyframes cloud {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(100%);
+    }
+}
+
+@media (min-width:540px) {
+    .header-box h1 {
+        letter-spacing: 10px;
+    }
+
+    h1, h2, span {
+        font-size: 5vw;
+    }
+}
+
+
+@media (min-width:768px) {
+    #section5 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bullets {
+        flex-direction: row;
+        width: 80%;
+    }
+
+    .bullet-points {
+        max-width: 30vw;
+        width: 30%;
+        min-height: 30vh;
+    }
+
+    .data-item svg {
+        width: 300px;
+        height: 300px;
+    }
+
+    .bullet-points:hover img {
+        background-color: aliceblue;
+    }
+    
+    .bullet-points:hover{
+        background-color: #ff837f;
+        color: #040220;
+        transform: scale(1.1);
+    }
+
+    .bullet-points:hover h3 {
+        color: #040220;
+    }
+
+}
+
+@media (min-width:1500px) {
+
+    .data-item svg {
+        width: 500px;
+        height: 500px;
+    }
+
+
+
+}
+
+

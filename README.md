@@ -1,5 +1,9 @@
 # outdoors
 
+## live site
+
+https://binatari.github.io/outdoors/
+
 ## screenshots
 ![Screenshot](https://user-images.githubusercontent.com/65396478/135909481-3b3b47c2-9d24-4110-9719-2790ff041a35.png)
 
